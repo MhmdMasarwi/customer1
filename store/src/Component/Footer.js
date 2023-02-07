@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={6}>
-            <p className="text-muted text-right">
+            <p className="text1">
               Built with React & Bootstrap <br></br>
               mhmod jbaren 2/2023
             </p>

@@ -13,8 +13,9 @@ footer {
   
 }
 
-p.text-muted {
+.text1{
   font-size: 14px;
   color: gray;
+  text-align: center;
 
 }
