@@ -1,10 +1,12 @@
 import './App.css';
 import ProductPage from './Component/ProductPage';
-
+import Footer from './Component/Footer'
 function App() {
   return (
     <div className="App">
-      <ProductPage/>
+      
+      <Footer/>
+      {/* <ProductPage/> */}
     </div>
   );
 }
