@@ -1,0 +1,13 @@
+category-button{
+    background-color: #0f2786;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+:hover {
+    background-color: #1e88e5;
+  }

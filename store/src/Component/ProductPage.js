@@ -28,7 +28,7 @@ const CategoryButtons = () => {
 
   return (
     <>
-      <ButtonGroup className="d-flex mb-3">
+      <ButtonGroup className="category-button">
         <Link to="/product1">
           <Button
             onClick={() => handleCategorySelect("Category 1")}
@@ -62,12 +62,6 @@ const CategoryButtons = () => {
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>Category: {product.category}</Card.Text>
-                <Button
-                  onClick={() => handleDeleteProduct(product.id)}
-                  variant="danger"
-                >
-                  מחק מוצר
-                </Button>
               </Card.Body>
             </Card>
           ))}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getAllProductByCategory } from "../firebase_handlers/handleGetProduct";
-
+import Card from "./Card";
 function Category2() {
   const [objData, setObjData] = useState([]);
   useEffect(() => {
@@ -12,7 +12,11 @@ function Category2() {
   return (
     <div>
       {objData.map((item, index) => {
-        return <h1 key={index}>{item.data().price}</h1>;
+        return (
+            <div key={index}>
+              <Card data={item} />
+            </div>
+          );
       })}
     </div>
   );
