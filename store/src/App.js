@@ -7,11 +7,12 @@ import AddProdect from "./Component/AddProdect";
 import Category1 from "./Component/Category1";
 import Category2 from "./Component/Category2";
 import Category3 from "./Component/Category3";
-import Viewitem from "./Component/Viewitem";
+import ProductPage from "./Component/ProductPage";
 function HomePage8() {
   return (
     <div>
       <HomePage />
+      <ProductPage />
     </div>
   );
 }
@@ -22,23 +23,16 @@ function AddProductPage() {
     </div>
   );
 }
-function ViewitemPage() {
-  return (
-    <div>
-      <Viewitem/>
-    </div>
-  );
-}
+
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage8 />} />
         <Route path="/addProduct" element={<AddProductPage />} />
         <Route path="/product1" element={<Category1 />} />
         <Route path="/product2" element={<Category2 />} />
         <Route path="/product3" element={<Category3 />} />
-        <Route path="/ViewitemPage" element={<ViewitemPage/>} />
       </Routes>
       <Footer />
       {/* <ProductPage/> */}
