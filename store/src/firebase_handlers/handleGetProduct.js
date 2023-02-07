@@ -14,7 +14,9 @@ export const getProduct = async (e, data) => {
 export const getAllProductByCategory = async (e, data) => {
   try {
     return getDocs(collection(db, "products")).then((querySnapshot) => {
-      return querySnapshot.docs.find((doc) => doc.category === data.category);
+      return querySnapshot.docs.filter(
+        (doc) => doc.data().category === data.category
+      );
     });
   } catch (e) {
     console.error("Error adding document: ", e);
