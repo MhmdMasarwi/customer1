@@ -41,7 +41,7 @@ function App() {
         <Route path="/product1" element={<Category1 />} />
         <Route path="/product2" element={<Category2 />} />
         <Route path="/product3" element={<Category3 />} />
-        <Route path="/viewitem" element={<ViewitemPage />} />
+        <Route path="/viewitem" element={<ViewitemPage />}/>
       </Routes>
       <Footer />
       {/* <ProductPage/> */}
