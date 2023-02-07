@@ -14,7 +14,7 @@ function CardPage({ data }) {
         <ListGroup.Item>price: {data.data().price}</ListGroup.Item>
       </ListGroup>
       <Card.Body>
-        <Card.Link href="./editP.js">Edit</Card.Link>
+        <Card.Link href="./">Delete</Card.Link>
         {/* <Card.Link href="#">Another Link</Card.Link> */}
       </Card.Body>
     </Card>
