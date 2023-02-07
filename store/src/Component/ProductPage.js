@@ -45,12 +45,15 @@ const CategoryButtons = () => {
             קטגוריה 2
           </Button>
         </Link>
-        <Button
-          onClick={() => handleCategorySelect("Category 3")}
-          variant="secondary"
-        >
-          קטגוריה 3
-        </Button>
+
+        <Link to="/product2">
+          <Button
+            onClick={() => handleCategorySelect("Category 3")}
+            variant="secondary"
+          >
+            קטגוריה 3
+          </Button>
+        </Link>
       </ButtonGroup>
       {selectedCategory && (
         <CardGroup>
