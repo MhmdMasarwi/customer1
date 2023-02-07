@@ -1,8 +1,4 @@
-footer {
-  padding: 1rem 0;
-  background-color: #f8f9fa;
 
-}
 .bg{
   border: 1px solid black;
   margin-top: 100px;
@@ -10,11 +6,11 @@ footer {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  
+  text-align: center;
 }
 
-p.text-muted {
-  font-size: 14px;
+.text1{
+  font-size: 16px;
   color: gray;
 
 }
