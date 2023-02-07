@@ -1,9 +1,15 @@
 import { db } from "../firebase";
+import { collection, doc, updateDoc } from "firebase/firestore";
 
-export const updateDoc = async (docId, data) => {
-  const documentRef = db.collection("products").doc(docId);
+export const updateDocRef = async (docId, data) => {
+  const docRef = doc(db, "products", docId);
+
   try {
-    await documentRef.update(data);
+    updateDoc(docRef, data).then((docRef) => {
+      console.log(
+        "A New Document Field has been added to an existing document"
+      );
+    });
     return true;
   } catch (error) {
     console.error("Error updating document: ", error);
